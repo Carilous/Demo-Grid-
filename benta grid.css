@@ -1,0 +1,88 @@
+
+body{
+ background-color:rgb(162,198,210);
+    margin-bottom: 2px;
+}
+.watermark{
+    position: fixed;
+    size: 20px;
+    top: 0%;
+    margin-left: 300px;
+    left: 0px;
+    color: rgb(108, 38, 148);
+font-stretch: expanded;
+}
+.generalcontainer{
+
+   padding: 30px;
+   display: flex;justify-content: center;
+    gap: 10px;
+line-height: 25px;
+    height: 100px;
+    display: grid;
+    border-radius: 200px;
+    grid-template-columns: repeat(4,180px);
+    grid-template-rows: 180px 150px 100px 190px;
+    grid-template-areas: " pp so so  sc"
+                         " pp man mai  sc  " 
+                         " ai man mai sc "
+                         "ai pe gr gr "
+                            ;
+  
+}
+.post{
+    background-color:rgb(249,238,226) ;
+    grid-area: pp;
+    border-radius: 10px;
+   
+ 
+    }
+    .heighlightedword{
+        color: rgb(118,81,221) ;
+    }
+
+.socialmedia{background-color:rgb(118,81,221) ;
+    grid-area: so;
+    display: flex;align-items: center;flex-direction: column;justify-content: center;
+    color: white;
+   border-radius: 10px;
+}
+.schedule{
+    background-color: rgb(221,209,252);
+grid-area: sc;
+border-radius: 10px;
+}
+
+.ai{ 
+    background-color: rgb(255,205,106);
+    grid-area: ai;
+    border-radius: 10px;
+    padding: 15px;
+ 
+}
+
+.manage{
+    background-color:rgb(255,255,255) ;
+    grid-area: man;
+    padding: 15px;
+    border-radius: 10px;
+}
+.maintain{
+    background-color: rgb(255,205,106);
+    grid-area: mai;
+    padding: 15px;
+    border-radius: 10px;
+}
+.percentage{
+    background-color: rgb(255,255,255);
+    grid-area: pe;
+    padding: 20px ;
+    border-radius: 10px;
+}
+.grow{
+    border-radius: 10px;
+    background-color: rgb(118,81,221);
+    grid-area: gr;
+    color: white ;
+    display: flex;align-items: end;flex-direction: row-reverse;
+}
